@@ -34,7 +34,7 @@ function ToDoWork() {
     edit_icon.classList = "fa-solid fa-pen"
     para.innerHTML = main_value.value;
     // dlt_btn.innerHTML = "Delete";
-    dlt_btn.style.marginRight = "10px";
+    dlt_btn.style.marginRight = "25px";
     // edit_btn.innerHTML = "Edit"
 
 
