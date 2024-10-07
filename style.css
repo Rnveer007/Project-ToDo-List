@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    /* background-color: black; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2013/07/12/12/05/clipboard-145248_1280.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.heading{
+    /* color: #fff; */
+    text-align: center;
+    margin: 3rem  0;
+    text-shadow: 2px 2px red;
+    font-size: 60px;
+}
+
+ .main{
+    background-color: #ee9831;
+    padding: 20px;
+    border-radius: 8px;
+ }
+
+#box input{
+    width: 350px;
+    height: 40px;
+    margin-right: 5rem;
+    padding: 0 20px;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+#add{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+#storage_box{
+    margin-top: 2rem;
+    height: 150px;
+}
+
+.added_items{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    /* background-color: #747474; */
+    color: #fff;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#storage_box p{
+    /* color: #fff;  */
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 8px;
+}   
+
+
+.btn_storage{
+    display: inline-block;
+}
+
+.dlt_btn{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    /* background-color: red; */
+    color: #fff;
+    border-radius: 8px;
+}
+.edit_btn{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    /* background-color: green; */
+    border-radius: 8px;
+}
