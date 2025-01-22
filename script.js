@@ -103,6 +103,7 @@ function Edit_item(para, Task) {
   flag=true;
   changedObjectTask=Task
   changedpara=para;
+  btn_add.innerHTML = "Update Task"
   
 }
 
