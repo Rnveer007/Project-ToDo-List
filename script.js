@@ -3,13 +3,14 @@ let btn_add = document.querySelector("#add");
 let added_value = document.querySelector("#storage_box");
 let backgroundColors = [
   { backgroundColor: "#ad7474", color: "#fff" },
-  { backgroundColor: "red", color: "#fff" },
+  { backgroundColor: "gray", color: "#fff" },
   { backgroundColor: "#93933d", color: "#000" },
   { backgroundColor: "green", color: "#000" },
   { backgroundColor: "brown", color: "#fff" },
   { backgroundColor: "#647e7e", color: "#000" },
   { backgroundColor: "blue", color: "#fff" },
 ];
+
 let itemArr = [];
 let count = 0;
 let changedObjectTask;
@@ -34,6 +35,7 @@ function ToDoWork() {
       flag=false;
       main_value.value=''
       changedpara=null;
+      btn_add.innerHTML = "Add Task"
 
     }
     else{
@@ -52,14 +54,12 @@ function ToDoWork() {
       let edit_icon = document.createElement("i")
       edit_icon.classList = "fa-solid fa-pen"
       para.innerHTML = main_value.value;
-      // dlt_btn.innerHTML = "Delete";
       dlt_btn.style.marginRight = "25px";
-      // edit_btn.innerHTML = "Edit"
   
       let itemObj = {
         id: ++count,
         task: para.innerHTML,
-      }
+      };
   
   
       let rendomColor = backgroundColors[BackgroundColors()]
@@ -85,17 +85,14 @@ function ToDoWork() {
       })
   
       itemArr.push(itemObj)
-  
     }
   }
-}
-
-
+};
 
 function Remove_item(items,ID) {
   itemArr=itemArr.filter((item)=>item.id!==ID)
   items.remove();
-}
+};
 
 function Edit_item(para, Task) {
   main_value.value = para.innerHTML;
@@ -104,9 +101,8 @@ function Edit_item(para, Task) {
   changedObjectTask=Task
   changedpara=para;
   btn_add.innerHTML = "Update Task"
-  
-}
+};
 
 function BackgroundColors() {
   return Math.floor(Math.random() * backgroundColors.length);
-}
+};
